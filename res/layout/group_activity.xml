@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sunset"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GroupActivity" >
+    
+    <ImageView
+        android:id="@+id/group_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pipeline"
+        android:contentDescription="@string/group_image_desc"
+        android:scaleType="fitStart"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" 
+        android:layout_toRightOf="@id/group_image"
+        android:text="@string/grp_name"
+        android:layout_marginBottom="10dp" />
+    
+    <TextView
+        android:id="@+id/group_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic" 
+        android:textSize="12sp"
+        android:layout_below="@id/group_name"
+        android:layout_toRightOf="@id/group_image"
+        android:text="@string/grp_desc" />
+    
+    <TextView
+        android:id="@+id/grp_invite_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_image"
+        android:layout_marginBottom="15dp"
+        android:text="@string/grp_invite"
+        android:textSize="16sp" />
+    
+    <EditText
+        android:id="@+id/invite_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/invite_hint"
+        android:inputType="phone"
+        android:layout_below="@id/grp_invite_label"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="20dp" />
+    
+    <Button
+        android:id="@+id/invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grp_invite_label"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/send_invite"
+        android:onClick="sendInvite"
+        android:text="@string/send_invite"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/schedule_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/create_schedule"
+        android:layout_below="@id/invite_phone"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="@string/schedule_label" />
+    
+    <Button
+        android:id="@+id/create_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_phone"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/calendar"
+        android:onClick="createSchedule"
+        android:text="@string/schedule_create"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

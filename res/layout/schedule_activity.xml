@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ScheduleActivity" >
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    
+	    <TextView
+		    android:id="@+id/day_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/day_label"
+	        android:layout_marginBottom="5dp" />
+	    
+	    <LinearLayout
+	        android:id="@+id/select_container"
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/day_label">
+		    
+		    <Spinner
+		        android:id="@+id/day_select"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/days"
+		        android:prompt="@string/choose_sex"
+		        android:layout_marginBottom="5dip" />
+		    
+		</LinearLayout>
+		
+	    <TextView
+		    android:id="@+id/start_time_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/select_container"
+	        android:text="@string/departure" /> 
+		
+	    <TimePicker
+	        android:id="@+id/start_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="150dp"
+	        android:layout_below="@id/start_time_label" />
+	    
+	    <TextView
+		    android:id="@+id/selected_days"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/start_time"
+	        android:textStyle="bold" /> 
+	        
+	    <TextView
+		    android:id="@+id/reminder_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/selected_days"
+	        android:text="@string/reminder" /> 
+	        
+	   <Spinner
+	        android:id="@+id/reminder_select"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:prompt="@string/select_reminder"
+	        android:layout_below="@id/reminder_label" />
+	   
+	    <LinearLayout
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/reminder_select"
+	    	style="android:attr/buttonBarStyle">
+	    	
+		    <Button
+		        android:id="@+id/add_selected_day"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/add_day"
+		        android:layout_weight="1"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:onClick="addSelected" />
+		    
+		    <Button
+		        android:id="@+id/done"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/done"
+		        android:layout_weight="1"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:onClick="done" />
+		    
+		 </LinearLayout>
+	 </RelativeLayout>
+	
+</ScrollView>

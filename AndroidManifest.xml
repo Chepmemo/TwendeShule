@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twendeshule"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.twendeshule.view.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.ParentActivity"
+            android:label="@string/title_activity_parent" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.CarActivity"
+            android:label="@string/title_activity_car" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.ChildActivity"
+            android:label="@string/title_activity_child" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.SchoolActivity"
+            android:label="@string/title_activity_school" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.CongratsActivity"
+            android:label="@string/title_activity_congrats" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.PasswordActivity"
+            android:label="@string/title_activity_password" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.GroupActivity"
+            android:label="@string/title_activity_group" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.GroupListActivity"
+            android:label="@string/title_activity_grouplist" >
+        </activity>
+        <activity
+            android:name="com.twendeshule.view.ScheduleActivity"
+            android:label="@string/title_activity_schedule" >
+        </activity>
+    </application>
+
+</manifest>

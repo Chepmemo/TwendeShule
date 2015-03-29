@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/group_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="6dip"
+        android:contentDescription="@string/group_image_desc"
+        android:src="@drawable/pipeline"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/group_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/group_image"
+        android:ellipsize="marquee"
+        android:text="@string/grp_desc"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/group_desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/group_image"
+        android:gravity="center_vertical"
+        android:text="@string/grp_name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout> 

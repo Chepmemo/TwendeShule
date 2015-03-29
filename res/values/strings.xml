@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_reminder">Select Reminder</string>
+    <string name="reminder">Reminder</string>
+	<string name="departure">Departure</string>
+    <string name="group_image_desc">Group identifying image</string>
+    <string name="schedule_label">Schedule</string>
+    <string name="schedule_create">" Create Schedule"</string>
+    <string name="app_name">Twende Shule</string>
+    <string name="action_settings">Settings</string>
+    <string name="phone_label">ENTER PHONE NUMBER</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="password_hint">Password</string>
+    <string name="profile">My Profile</string>
+    <string name="add_group">Add Group</string>
+    <string name="my_groups">My Groups</string>
+    <string name="all_groups">All Groups</string>
+    <string name="register">CREATE AN ACCOUNT</string>
+    <string name="password_label">ENTER PASSWORD</string>
+    <string name="login_go">LOG IN</string>
+    <string name="quit_msg">Do You Want To Quit?</string>
+    <string name="quit">Quit</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_home">Twende Shule</string>
+    <string name="home_register">Register</string>
+    <string name="home_help">Help</string>
+    <string name="title_activity_parent">Parent Registration</string>
+    <string name="title_activity_grouplist">Groups</string>
+    <string name="parent_names">FULL NAMES</string>
+    <string name="parent_email">EMAIL</string>
+    <string name="parent_residence">RESIDENCE(ESTATE)</string>
+    <string name="next">SAVE \u0026 NEXT</string>
+    <string name="title_activity_car">Car Registration</string>
+    <string name="car_model">CAR MODEL</string>
+    <string name="car_reg">REG. #</string>
+    <string name="car_cap">CAPACITY</string>
+    <string name="title_activity_child">Child Registraion</string>
+    <string name="child_names">CHILD\'S NAME</string>
+    <string name="child_sex">GENDER</string>
+    <string name="child_age">AGE</string>
+    <string name="title_activity_school">School Selection</string>
+    <string name="school_name">SELECT SCHOOL</string>
+    <string name="school_class">SELECT CLASS</string>
+    <string name="submit_to_school">SUBMIT TO SCHOOL</string>
+    <string name="parent_phone">PHONE NUMBER:</string>
+    <string name="choose_sex">GENDER</string>
+
+    <string-array name="classes">
+        <item>Class 1</item>
+        <item>Class 2</item>
+        <item>Class 3</item>
+    </string-array>
+    
+    <string-array name="sex">
+        <item>BOY</item>
+        <item>GIRL</item>
+    </string-array>
+    
+    <string-array name="days">
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THUR</item>
+        <item>FRI</item>
+        <item>SAT</item>
+         <item>SUN</item>
+    </string-array>
+    <string name="days_sample">MON, TUE</string>
+	<string name="add_day">ADD</string>
+	<string name="done">DONE</string>
+    <string name="title_activity_congrats">Thank You</string>
+    <string name="congrats_msg">Thank you for using Twende Shule.\n Your data has been submitted to Light Academy Intl. for verification.\n Once they get back to us, we will do let you know.</string>
+    <string name="back_home">HOME</string>
+    <string name="title_activity_password">Set Your Password</string>
+    <string name="set_password_label">ENTER PASSWORD</string>
+    <string name="re_type_password">RE-ENTER PASSWORD</string>
+    <string name="group_name_hint">Type Group Name</string>
+    <string name="group_desc_hint">Group Description</string>
+    <string name="new_group">Create Group</string>
+    <string name="dialog_new_grp">NEW GROUP</string>
+    <string name="create">Create</string>
+    <string name="title_activity_group">Group</string>
+    <string name="grp_name">Pipeline Hustlers</string>
+    <string name="grp_desc">All hustles from Pipeline are welcome to this group.</string>
+    <string name="grp_invite">Invite to This Group</string>
+    <string name="invite_hint">Phone Number</string>
+    <string name="send_invite">" Send"</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="day_label">When do you want to help take kids to school?</string>
+
+</resources>

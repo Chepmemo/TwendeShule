@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sunset"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/add_group"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="newGroup"
+        android:background="@drawable/add" />
+    
+   <View 
+        android:id="@+id/vertical_divider"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="#10000000"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:id="@+id/add_group_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/add_group"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/add_group"
+        android:layout_marginBottom="50dp" />  
+    
+    <View 
+        android:id="@+id/horizontal_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#10000000"
+        android:layout_centerVertical="true" />
+        
+    <Button 
+        android:id="@+id/all_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="14sp"
+        android:background="@drawable/groups"
+        android:layout_toLeftOf="@id/add_group"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        android:onClick="allGroups" />
+    
+    <TextView
+        android:id="@+id/all_groups_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_groups"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/all_groups"
+        android:layout_alignLeft="@id/all_groups"
+        android:layout_marginBottom="50dp" />
+    
+    <Button 
+        android:id="@+id/my_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/add_group_label"
+        android:background="@drawable/my_groups"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp" />
+    
+    <TextView
+        android:id="@+id/my_groups_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/my_groups"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/my_groups"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/all_groups_label"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/profile"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/profile_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/my_profile"
+		android:layout_alignParentRight="true"
+        android:text="@string/profile"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sunset"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SchoolActivity" >
+
+    <TextView
+        android:id="@+id/school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_name"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dip" />
+    
+    <Spinner
+        android:id="@+id/select_school"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:prompt="@string/school_name"
+        android:layout_below="@id/school_name"
+        android:layout_marginBottom="25dip" />
+    
+    <TextView
+        android:id="@+id/school_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_class"
+        android:layout_marginBottom="10dip"
+        android:textColor="@color/white"
+        android:layout_below="@id/select_school" />
+    
+    <Spinner
+        android:id="@+id/select_class"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:entries="@array/classes"
+        android:prompt="@string/school_class"
+        android:layout_below="@id/school_class"
+        android:layout_marginBottom="25dip" />
+    
+    <Button 
+        android:id="@+id/child_school"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_to_school"
+        android:layout_below="@id/select_class"
+        android:layout_alignParentRight="true"
+        android:onClick="submitToSchool"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background" />
+
+</RelativeLayout>
